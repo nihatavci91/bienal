@@ -1,0 +1,186 @@
+
+/* @media (min-width:1200px) {
+    .d-xl-none{
+        display: none!important;
+    }
+}
+  */
+@media (max-width:1500px){
+    .drone-img { 
+        top: 180px;
+        right: 30px;
+        animation: myOrbit 3s linear infinite;
+    }
+    .drone-img img{
+        width: 190px;
+    }
+    .drone-bg-shape {
+        right: 0; 
+        right: 80px;
+        top: 150px;
+    }
+    .pilot-image img{
+        width: 450px;
+    }
+    .pilot-bg-shape { 
+        left: 190px;
+        bottom: 230px;
+    }
+}
+@media (max-width:1200px){
+    .sc-logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 110px;
+    }
+    .slogan-title {
+        font-size: 35px;
+    }
+    .pilot-image {
+        position: absolute;
+        left: -70px;
+        bottom: -1px;
+    }
+    .pilot-bg-shape {
+        left: 120px;
+        bottom: 230px;
+    }
+    .we-are-text {
+        left: 60px;
+    }
+    .arrow-selector img {
+        width: 90px;
+    }
+    .arrow-selector {
+        left: 110px;
+    }
+    .wwp-description{
+        font-size: 15px;
+        padding: 15px;
+    }
+} 
+@media (max-width:992px){
+    .slogan-title {
+        font-size: 25px;
+    }
+    .wwp-title{
+        writing-mode: inherit; 
+    }
+    .star-page-three img{
+        width: 80px;
+    }
+    .wwp-title-wrapper{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .page {
+        height: auto; 
+        width: auto; 
+        /* overflow: hidden; */
+        padding: 50px 0;
+    }
+    #page2{
+        height: 100%;
+        width: 100%;
+    }
+    .title-animation div{
+        font-size: 3rem;
+    }
+    .wwp-title-wrapper .title-animation{
+        width: 100vw;
+        height: 150px;
+    }
+    .wwp-title-wrapper .star-page-three{
+        text-align: center;
+    }
+    .contactModal .map{
+        height: 250px;
+    }
+}
+
+@media (max-width:768px){
+    .page-2-content{
+        width: 100%;
+        padding-left: 40%;
+    }
+    .arrow-link {
+        right: 50px;
+    }
+    .arrow-link .arrow-link-text{
+        font-size: 20px;
+    }
+    .arrow-link .arrow-link-img img{
+        width: 40px;
+    }
+    .wwp-title{
+        font-size: 45px;
+    }
+    .www-logos-wrp img {
+        width: 80px;
+    }
+    .title-animation div{
+        font-size: 3rem !important;
+    }
+    .sc-logo{
+        padding-bottom: 140px;
+    }
+    .contactModal .map{
+        height: 150px;
+    }
+    .sc-logo img{
+        width: 200px;
+    }
+    .dots-wrapper{
+        width: 160px;
+    }
+    .dots .dot:nth-child(1) img{
+        width: 60px;
+    }
+    .dots .dot:nth-child(2) img{
+        width: 40px;
+    }
+    .dots .dot:nth-child(3) img{
+        width: 20px;
+    }
+    .dots .dot:nth-child(2) { 
+        margin: 0 30px;
+      }
+      .dots .dot:nth-child(3) {
+        margin: 0 45px;
+      }
+      #page5{
+        height: auto !important;
+      }
+      #page5 .www-img-1{
+        display: none;
+      }
+      .slider-page img, .slider-page iframe{
+        height: auto;
+      }
+}
+@media (max-width:576px){
+ .left-side{
+    display: none;
+  }
+  .page-2-content{
+    width: 100%;
+    padding-left: 20px;
+  }
+  .wwp-description{
+    font-size: 13px;
+    border: none; 
+  }
+  .wwp-title, .www-title{
+    font-size: 25px;
+  }
+
+}
+@media (min-width: 568px) and (max-width: 1400px){
+    .contactModal .modal-xl {
+    max-width: calc(100% - 70px);
+}
+}
+ 
