@@ -32,11 +32,9 @@ class OurWorksController extends Controller
         $imageUrl = time() . "-" . "our_works" . "-" . $validated['image']->getClientOriginalName();
         $validated['image']->move(public_path('images'). "/", $imageUrl);
         $check = 0;
-        if (isset($data['image_check']))
+        if ($data['image_check'] == "on")
         {
             $check = 1;
-        }else{
-            $check = 0;
         }
 
         OurWorks::create([
