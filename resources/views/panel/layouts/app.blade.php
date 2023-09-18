@@ -8,7 +8,7 @@
           content="admin, admin dashboard, admin panel, admin template, analytics, bootstrap 4, crm, laravel admin, responsive, sass support, ui kits">
     <meta name="author" content="Themesbox17">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Milli Piyango Admin</title>
+    <title>Bienal Admin</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('panel-assets/images/favicon.ico') }}">
     <!-- Start css -->
@@ -245,3 +245,4 @@
 
 </body>
 </html>
+
