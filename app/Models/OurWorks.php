@@ -9,5 +9,5 @@ class OurWorks extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['image_url','video_url','img_check','sira'];
+    protected $fillable = ['image_url','video_url','image_check','sira'];
 }

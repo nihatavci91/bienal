@@ -35,13 +35,14 @@ class OurWorksController extends Controller
         if ($data['image_check'] == "on")
         {
             $check = 1;
+
         }
 
         OurWorks::create([
             'image_url' => $imageUrl,
             'sira' => $data['sira'],
             'video_url' => $data['video_url'],
-            'image_check' => $check
+            'image_check' => $check,
         ]);
 
         return redirect()->back()->with('successMessage', "Başarıyla Eklendi");
