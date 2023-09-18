@@ -58,7 +58,7 @@
                     <img src="./assets/images/icons/contact.png" class="mr-2">
                     Contact
                 </button>
-                <div class="language-wrapper d-flex justify-content-center mb-1">
+                <div class="language-wrapper justify-content-center mb-1">
                     <div class="tr-lang  d-flex justify-content-center align-items-center mr-2">TR</div>
                     <div class="en-lang active d-flex justify-content-center align-items-center">EN</div>
                 </div>
