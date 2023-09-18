@@ -17,7 +17,7 @@ class CreateOurWorksTable extends Migration
             $table->id();
             $table->text('image_url')->nullable();
             $table->text('video_url')->nullable();
-            $table->string('image_check');
+            $table->string('image_check')->nullable();
             $table->integer('sira')->nullable();
 
             $table->timestamps();
