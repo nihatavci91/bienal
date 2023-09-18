@@ -20,5 +20,11 @@ class UserSeeder extends Seeder
             'is_admin' => 1,
             'password' => bcrypt('12345678'),
         ]);
+        User::create([
+            'name' => 'nihat.avci',
+            'email' => 'info@bienal.com.tr',
+            'is_admin' => 1,
+            'password' => bcrypt('bienal18092023'),
+        ]);
     }
 }
