@@ -32,7 +32,7 @@ class OurWorksController extends Controller
         $imageUrl = time() . "-" . "our_works" . "-" . $validated['image']->getClientOriginalName();
         $validated['image']->move(public_path('images'). "/", $imageUrl);
         $check = 0;
-        if ($data['image_check'] == "on")
+        if (isset($data['image_check']))
         {
             $check = 1;
 
