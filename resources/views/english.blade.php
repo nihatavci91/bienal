@@ -59,7 +59,7 @@
                     Contact
                 </button>
                 <div class="language-wrapper justify-content-center mb-1">
-                    <div class="tr-lang  d-flex justify-content-center align-items-center mr-2">TR</div>
+                    <div class="tr-lang  d-flex justify-content-center align-items-center mr-2" id="tr_switch" onClick="tikla(this.id)">TR</div>
                     <div class="en-lang active d-flex justify-content-center align-items-center">EN</div>
                 </div>
                 <div class="d-flex justify-content-center">
@@ -305,7 +305,6 @@
         //set initial state.
 
         $('#customSwitch1').change(function() {
-            var id = $('#customSwitch1').val();
             window.location.href = "{{ route('home')}}";
 
         });
@@ -320,6 +319,9 @@
         return
     });
 
+    function tikla(tiklanan_id){
+        window.location.href = "{{ route('home')}}";
+    }
 
     $(window).on('scroll', function() {
         page1 = $("#page2").offset().top + (0);

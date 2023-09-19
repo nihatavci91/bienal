@@ -58,9 +58,9 @@
                     <img src="./assets/images/icons/contact.png" class="mr-2">
                     İletişim
                 </button>
-                <div class="language-wrapper  justify-content-center mb-1">
-                    <div class="tr-lang active d-flex justify-content-center align-items-center mr-2">TR</div>
-                    <div class="en-lang d-flex justify-content-center align-items-center">EN</div>
+                <div class="language-wrapper d-flex justify-content-center mb-1">
+                    <div class="tr-lang active d-flex justify-content-center align-items-center mr-2" >TR</div>
+                    <div class="en-lang d-flex justify-content-center align-items-center" id="en_switch" onClick="tikla(this.id)">EN</div>
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="custom-control custom-switch lang-switch">
@@ -308,6 +308,10 @@
             window.location.href = "{{ route('english')}}";
 
         });
+
+        $('#en_switch').change(function() {
+            window.location.href = "{{ route('english')}}";
+        });
     });
     $(window).on('scroll', function() {
         target = $("#page2").offset().top + (250);
@@ -318,6 +322,9 @@
         }
         return
     });
+    function tikla(tiklanan_id){
+        window.location.href = "{{ route('english')}}";
+    }
 
 
     $(window).on('scroll', function() {
