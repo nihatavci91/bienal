@@ -62,14 +62,7 @@
                     <div class="tr-lang  d-flex justify-content-center align-items-center mr-2" id="tr_switch" onClick="tikla(this.id)">TR</div>
                     <div class="en-lang active d-flex justify-content-center align-items-center">EN</div>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <div class="custom-control custom-switch lang-switch">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch1" value="2">
-                        <label class="custom-control-label" for="customSwitch1"></label>
-                    </div>
-                </div>
             </div>
-
         </div>
     </div>
 </div>
