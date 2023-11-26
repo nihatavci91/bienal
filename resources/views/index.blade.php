@@ -156,22 +156,22 @@
         <div class="d-lg-none">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    @foreach($our_works as $key => $value)
+                        <li data-target="#carouselExampleIndicators" data-slide-to="{{$key}}" <?php echo ($key == 0) ? 'class="active"' : ' ' ?> ></li>
+                    @endforeach
                 </ol>
                 <div class="carousel-inner">
                     @foreach($our_works as $index => $item)
                         @if($item['image_check' == 1])
-                            <div class="carousel-item active">
+                            <div class="carousel-item <?php echo ($index == 0) ? 'active' : ' ' ?>">
                                 <a href="#Modal{{$index}}" data-toggle="modal{{$index}}" data-target="#Modal{{$index}}">
-                                    <img src="./assets/images/kapak/reels1.png">
+                                    <img src="./images/{{$item['image_url']}}">
                                 </a>
                             </div>
                         @else
-                            <div class="carousel-item active">
+                            <div class="carousel-item <?php echo ($index == 0) ? 'active' : ' ' ?>">
                                 <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">
-                                    <img src="./assets/images/kapak/reels1.png">
+                                    <img src="./images/{{$item['image_url']}}">
                                 </a>
                             </div>
                         @endif
