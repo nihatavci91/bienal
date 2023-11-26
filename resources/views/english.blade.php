@@ -156,22 +156,22 @@
         <div class="d-lg-none">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    @foreach($our_works as $key => $value)
+                        <li data-target="#carouselExampleIndicators" data-slide-to="{{$key}}" <?php echo ($key == 0) ? 'class="active"' : ' ' ?> ></li>
+                    @endforeach
                 </ol>
                 <div class="carousel-inner">
                     @foreach($our_works as $index => $item)
                         @if($item['image_check' == 1])
-                            <div class="carousel-item active">
+                            <div class="carousel-item <?php echo ($index == 0) ? 'active' : ' ' ?>">
                                 <a href="#Modal{{$index}}" data-toggle="modal{{$index}}" data-target="#Modal{{$index}}">
-                                    <img src="./assets/images/kapak/reels1.png">
+                                    <img src="./images/{{$item['image_url']}}">
                                 </a>
                             </div>
                         @else
-                            <div class="carousel-item active">
+                            <div class="carousel-item <?php echo ($index == 0) ? 'active' : ' ' ?>">
                                 <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">
-                                    <img src="./assets/images/kapak/reels1.png">
+                                    <img src="./images/{{$item['image_url']}}">
                                 </a>
                             </div>
                         @endif
@@ -258,29 +258,28 @@
 
                     </div>
                     <div class="col-12">
-                        <form>
+                        <form action="{{ route('home.mail') }}" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">E-Mail</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <label for="email">E-Posta</label>
+                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Phone</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <label for="tel">Telefon</label>
+                                        <input type="number" class="form-control" id="tel" name="tel" aria-describedby="number">
                                     </div>
                                 </div>
                             </div>
-
-
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label for="description">Mesaj</label>
+                                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Send</button>
+                            <button type="submit" class="btn btn-primary">Gönder</button>
                         </form>
                     </div>
                 </div>

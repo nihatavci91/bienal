@@ -239,7 +239,7 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+                <h5 class="modal-title" id="exampleModalLabel">İletişim</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -257,26 +257,25 @@
 
                     </div>
                     <div class="col-12">
-                        <form>
+                        <form action="{{ route('home.mail') }}" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">E-Posta</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <label for="email">E-Posta</label>
+                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Telefon</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <label for="tel">Telefon</label>
+                                        <input type="number" class="form-control" id="tel" name="tel" aria-describedby="number">
                                     </div>
                                 </div>
                             </div>
-
-
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Mesaj</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label for="description">Mesaj</label>
+                                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                             </div>
 
                             <button type="submit" class="btn btn-primary">Gönder</button>

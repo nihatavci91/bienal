@@ -27,7 +27,7 @@ Route::group(['middleware' => ['auth']], function (){
 */
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/english', [HomeController::class, 'english'])->name('english');
-
+Route::post('/mailsubmit', [HomeController::class, 'mailsubmit'])->name('home.mail');
 Route::get('/panel/login', [AuthController::class, 'panelLogin'])->name('panel.login')->middleware('guest');
 Route::post('/login', [AuthController::class, 'login'])->name('panel.login.post')->middleware('guest');
 Route::get('/logout', [AuthController::class, 'logout'])->name('panel.logout')->middleware('auth');
