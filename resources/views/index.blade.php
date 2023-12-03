@@ -256,31 +256,6 @@
                         <iframe class="map" src="<?php echo $about['map'] ?>"></iframe>
 
                     </div>
-                    <div class="col-12">
-                        <form action="{{ route('home.mail') }}" method="post">
-                            @csrf
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <label for="email">E-Posta</label>
-                                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <label for="tel">Telefon</label>
-                                        <input type="number" class="form-control" id="tel" name="tel" aria-describedby="number">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="description">Mesaj</label>
-                                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Gönder</button>
-                        </form>
-                    </div>
                 </div>
             </div>
             <div class="modal-footer">
