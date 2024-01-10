@@ -67,130 +67,135 @@
     </div>
 </div>
 <div id="page2" class="page position-relative">
-    <div class="page-2-content bg-Fdark m-auto d-flex align-items-center">
-        <div class="slogan-title"><?php echo $printed['description_en']; ?></div>
-    </div>
-    <div class="left-side">
-        <div class="pilot-bg-shape">
-            <img src="./assets/images/horizontal-shape.png">
+    <div class="cont-custon position-relatice page">
+        <div class="page-2-content bg-Fdark m-auto d-flex align-items-center">
+            <div class="slogan-title"><?php echo $printed['description_en']; ?></div>
         </div>
-        <div class="pilot-image">
-            <img src="./assets/images/pilot.png">
+        <div class="left-side">
+            <div class="pilot-bg-shape">
+                <img src="./assets/images/horizontal-shape.png">
+            </div>
+            <div class="pilot-image">
+                <img src="./assets/images/pilot.png">
+            </div>
+            <div class="vertical-text we-are-text d-none d-md-flex">ABOUT US</div>
+            <div class="arrow-selector d-none d-md-flex">
+                <img src="./assets/images/ok.png">
+            </div>
         </div>
-        <div class="vertical-text we-are-text d-none d-md-flex">ABOUT US</div>
-        <div class="arrow-selector d-none d-md-flex">
-            <img src="./assets/images/ok.png">
-        </div>
-    </div>
-    <div class="right-side">
-        <div class="drone-bg-shape d-none d-md-flex">
-            <img src="./assets/images/vertical-shape.png">
-        </div>
-        <div class="drone-img d-none d-md-flex">
-            <img src="./assets/images/drone-film.png">
-        </div>
-        <div class="d-flex align-items-center dots-wrapper">
-            <div class="dots">
-                <div class="dot"><img src="./assets/images/star.png"> </div>
-                <div class="dot"><img src="./assets/images/star.png"> </div>
-                <div class="dot"><img src="./assets/images/star.png"> </div>
+        <div class="right-side">
+            <div class="drone-bg-shape d-none d-md-flex">
+                <img src="./assets/images/vertical-shape.png">
+            </div>
+            <div class="drone-img d-none d-md-flex">
+                <img src="./assets/images/drone-film.png">
+            </div>
+            <div class="d-flex align-items-center dots-wrapper">
+                <div class="dots">
+                    <div class="dot"><img src="./assets/images/star.png"> </div>
+                    <div class="dot"><img src="./assets/images/star.png"> </div>
+                    <div class="dot"><img src="./assets/images/star.png"> </div>
+                </div>
             </div>
         </div>
     </div>
-
 </div>
 <div id="page3" class="page position-relative">
     <img src="./assets/images/gradient.png" class="gradient-page-top">
-    <div class="d-flex align-items-center h-100">
-        <div class="d-block d-lg-flex align-items-center justify-content-center    mx-lg-5">
-            <div class="wwp-title-wrapper d-flex d-lg-block align-items-center">
+    <div class="cont-custom position-relative page">
+        <div class="d-flex align-items-center h-100">
+            <div class="d-block d-lg-flex align-items-center justify-content-center    mx-lg-5">
+                <div class="wwp-title-wrapper d-flex d-lg-block align-items-center">
 
-                <div class="position-relative title-ancation-wrapper">
-                    <div class="star-page-three mb-0 mb-lg-5 pb-0 pb-lg-3">
-                        <img src="./assets/images/star.png">
+                    <div class="position-relative title-ancation-wrapper">
+                        <div class="star-page-three mb-0 mb-lg-5 pb-0 pb-lg-3">
+                            <img src="./assets/images/star.png">
+                        </div>
+                        <div class="title-animation">
+                            <div class="wwp-title vertical-text">ABOUT US</div>
+                            <div class="wwp-title vertical-text">ABOUT US</div>
+                        </div>
                     </div>
-                    <div class="title-animation">
-                        <div class="wwp-title vertical-text">ABOUT US</div>
-                        <div class="wwp-title vertical-text">ABOUT US</div>
-                    </div>
+
                 </div>
-
-            </div>
-            <div class="wwp-wrps d-flex justify-content-center mx-2 mx-md-5">
-                <div class="wwp-description mx-0 mx-md-5" data-splitting="lines">
-                    <?php echo $about['description_en'] ?>
+                <div class="wwp-wrps d-flex justify-content-center mx-2 mx-md-5">
+                    <div class="wwp-description mx-0 mx-md-5" data-splitting="lines">
+                        <?php echo $about['description_en'] ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div id="page4" class="page position-relative">
-    <div class="www-title mb-5 pb-5 pb-sm-0 mb-sm-0">
-        <div class="www-img-1" style="margin-top: -7px;"><img src="./assets/images/yonok.png"></div>
-        <div class="position-relative title-animation-wrapper">
-            <div class="title-animation">
-                <div>VIDEOS</div>
-                <div>VIDEOS</div>
+    <div class="cont-custom position-relative page">
+        <div class="www-title mb-5 pb-5 pb-sm-0 mb-sm-0">
+            <div class="www-img-1" style="margin-top: -7px;"><img src="./assets/images/yonok.png"></div>
+            <div class="position-relative title-animation-wrapper">
+                <div class="title-animation">
+                    <div>VIDEOS</div>
+                    <div>VIDEOS</div>
+                </div>
             </div>
+            <div class="www-img-1"><img src="./assets/images/yonok.png"></div>
         </div>
-        <div class="www-img-1"><img src="./assets/images/yonok.png"></div>
-    </div>
-    <div class="slider-page">
-        <div class="h-100 align-items-center d-none d-lg-flex">
-            <div class="video-slider">
-                @foreach($our_works as $index => $item)
-                    @if($item['image_check'] == 1)
-                        <div class="slide slide--{{$index}}">
-                            <img src="./images/{{$item['image_url']}}">
-                        </div>
-                    @else
-                        <div class="slide slide--{{$index}}">
-                            <a href="#Modal{{$index}}" data-toggle="modal" data-target="#Modal{{$index}}">
-                                <img src="./images/{{$item['image_url']}}">
-                            </a>
-                        </div>
-                    @endif
-                @endforeach
-            </div>
-        </div>
-        <div class="d-lg-none">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    @foreach($our_works as $key => $value)
-                        <li data-target="#carouselExampleIndicators" data-slide-to="{{$key}}" <?php echo ($key == 0) ? 'class="active"' : ' ' ?> ></li>
-                    @endforeach
-                </ol>
-                <div class="carousel-inner">
+        <div class="slider-page">
+            <div class="h-100 align-items-center d-none d-lg-flex">
+                <div class="video-slider">
                     @foreach($our_works as $index => $item)
-                        @if($item['image_check' == 1])
-                            <div class="carousel-item <?php echo ($index == 0) ? 'active' : ' ' ?>">
-                                <a href="#Modal{{$index}}" data-toggle="modal{{$index}}" data-target="#Modal{{$index}}">
-                                    <img src="./images/{{$item['image_url']}}">
-                                </a>
+                        @if($item['image_check'] == 1)
+                            <div class="slide slide--{{$index}}">
+                                <img src="./images/{{$item['image_url']}}">
                             </div>
                         @else
-                            <div class="carousel-item <?php echo ($index == 0) ? 'active' : ' ' ?>">
-                                <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">
+                            <div class="slide slide--{{$index}}">
+                                <a href="#Modal{{$index}}" data-toggle="modal" data-target="#Modal{{$index}}">
                                     <img src="./images/{{$item['image_url']}}">
                                 </a>
                             </div>
                         @endif
                     @endforeach
                 </div>
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </button>
+            </div>
+            <div class="d-lg-none">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        @foreach($our_works as $key => $value)
+                            <li data-target="#carouselExampleIndicators" data-slide-to="{{$key}}" <?php echo ($key == 0) ? 'class="active"' : ' ' ?> ></li>
+                        @endforeach
+                    </ol>
+                    <div class="carousel-inner">
+                        @foreach($our_works as $index => $item)
+                            @if($item['image_check' == 1])
+                                <div class="carousel-item <?php echo ($index == 0) ? 'active' : ' ' ?>">
+                                    <a href="#Modal{{$index}}" data-toggle="modal{{$index}}" data-target="#Modal{{$index}}">
+                                        <img src="./images/{{$item['image_url']}}">
+                                    </a>
+                                </div>
+                            @else
+                                <div class="carousel-item <?php echo ($index == 0) ? 'active' : ' ' ?>">
+                                    <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">
+                                        <img src="./images/{{$item['image_url']}}">
+                                    </a>
+                                </div>
+                            @endif
+                        @endforeach
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <div id="page5" class="page position-relative d-flex align-items-center justify-content-center h-100">
-    <div class="">
+    <div class="cont-custom position-relative page">
         <div class="www-title mb-5 pb-5 pb-sm-0 mb-sm-0 mb-lg-5 pb-lg-2">
             <div class="www-img-1"><img src="./assets/images/yonok.png"></div>
             <div class="position-relative title-animation-wrapper">
@@ -266,6 +271,13 @@
     </div>
 </div>
 </body>
+<!-- // Güncellendi Başlangıç-->
+<script type="text/javascript">
+
+    $('#exampleModal').on('hidden.bs.modal', function () {
+        $("#exampleModal iframe").attr("src", $("#exampleModal iframe").attr("src"));
+    });
+</script> <!-- // Güncellendi Bitiş-->
 <script>
 
     $(document).ready(function() {
