@@ -41,7 +41,7 @@
             </li>
         </ul>
         <div class="logo-container d-none d-lg-flex">
-            <div class="logo"><a href="#page1"><img src="./assets/images/logolar/Varlık 1.png"></a></div>
+            <div class="logo"><a href="#page1"><img src="./assets/images/logolar/ust-logo.svg"></a></div>
         </div>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -57,7 +57,7 @@
 <a id="buttonTop"></a>
 <div id="page1">
     <div class="container">
-        <div class="sc-logo d-flex d-lg-none"><img src="./assets/images/logolar/Varlık 1.png"></div>
+        <div class="sc-logo d-flex d-lg-none"><img src="./assets/images/logolar/ust-logo.svg"></div>
         <div class="slider-content d-flex justify-content-center">
             <div class="d">
                 <button type="button" class="btn btn-outline-warning mb-4" data-toggle="modal" data-target="#contactModal">
