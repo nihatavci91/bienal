@@ -274,8 +274,8 @@
 <!-- // Güncellendi Başlangıç-->
 <script type="text/javascript">
 
-    $('#exampleModal').on('hidden.bs.modal', function () {
-        $("#exampleModal iframe").attr("src", $("#exampleModal iframe").attr("src"));
+    $('.slider-modal').on('hidden.bs.modal', function () {
+        $(".slider-modal iframe").attr("src", $(".slider-modal iframe").attr("src"));
     });
 </script> <!-- // Güncellendi Bitiş-->
 <script>
