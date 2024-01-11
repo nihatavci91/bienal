@@ -18,7 +18,13 @@
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-
+    <style>
+        .carousel-item a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-ddark position-fixed w-100">
@@ -175,7 +181,7 @@
                                 </div>
                             @else
                                 <div class="carousel-item <?php echo ($index == 0) ? 'active' : ' ' ?>">
-                                    <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">
+                                    <a href="#Modal{{$index}}" data-toggle="modal" data-target="#Modal{{$index}}">
                                         <img src="./images/{{$item['image_url']}}">
                                     </a>
                                 </div>
