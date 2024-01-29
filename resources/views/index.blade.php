@@ -268,7 +268,7 @@
                                 {{$about['tel']}}</p>
                             <a href="mailto:{{$about['email']}}" style="color: #FF9015">{{$about['email']}}</a>
                         </div>
-                        <iframe class="map" src="<?php echo $about['map'] ?>"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4246.521322125804!2d28.98748839469559!3d41.070042941728204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6fca2432197%3A0x60882bb9d4c7aafa!2zTlVSU0FOTEFSIMSwxZ4gTUVSS0VaxLA!5e0!3m2!1str!2str!4v1706559973649!5m2!1str!2str" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
                 </div>
