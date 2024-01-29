@@ -284,11 +284,12 @@
 </body>
 <!-- // Güncellendi Başlangıç-->
 <script type="text/javascript">
-
-
-    $('.slider-modal').on('hidden.bs.modal', function () {
-        $(".slider-modal iframe").attr("src", $(".slider-modal iframe").attr("src"));
-    });
+    $('.slider-modal').on('hidden.bs.modal', function(e) {
+        var $iframes = $(e.target).find('iframe');
+        $iframes.each(function(index, iframe){
+            $(iframe).attr('src', $(iframe).attr('src'));
+        });
+    })
 </script> <!-- // Güncellendi Bitiş-->
 <script>
 
