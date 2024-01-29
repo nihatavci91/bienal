@@ -250,7 +250,7 @@
         </div>
     </div>
 @endforeach
-<div class="modal fade slider-modal contactModal" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade contactModal" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
