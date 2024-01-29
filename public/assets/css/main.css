@@ -338,8 +338,7 @@ html,body{
 #page2{background-color:#FFF;}
 #page3{background-color:#0F0F0F;}
 #page4{background-color:#0F0F0F;}
-#page5{background-color:#0F0F0F;}
-
+#page5{background-color:#0F0F0F; height: auto !important;}
 .video-slider{
     width:80%;
     margin:0 auto;
